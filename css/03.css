@@ -1,0 +1,23 @@
+header, nav, footer {
+    background-color: dodgerblue;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+    border: 2px solid tomato;
+}
+
+.c1 {
+    color: white;
+    background-color: tomato;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
