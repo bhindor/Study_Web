@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css">
+    <script src="card.js"></script>
+    <title>카드만들기</title>
+</head>
+<body>
+    <form name="myform">
+        <div class="box1">
+            카드만들기
+        </div>
+        <div class="box2">
+            <p>
+                <label for="txt_start">시작</label>
+                <input type="text" name="txt_start" id="txt_start">
+            </p>
+            <p id="end_box">
+                <label for="txt_end">종료</label>
+                <input type="text" name="txt_end" id="txt_end">
+            </p>
+            <p>
+                <input type="button" value="카드보기" onclick="show()">
+                <input type="button" value="지우기" onclick="showClear()">
+            </p>
+        </div>
+        <div id="msg"></div>
+    </form>
+</body>
+</html>
