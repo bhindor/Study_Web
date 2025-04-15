@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>설문작성</title>
+        <style>
+            .box1, .box2 {
+                padding: 10px;
+                margin: 10px;
+                width: 400px;
+            }
+            .box1 {
+                border-radius: 10px;
+                border: 2px solid #7bbb1b;
+                color: white;
+                text-align: center;
+                background-color: #7bbb1b;
+                height: 20px;
+            }
+            p > label {
+                display: inline-block;
+                background-color: aliceblue;
+                height: 20px;
+                padding: 5px;
+                width: 100%;
+                font-size: 14px;
+            }
+            input[type = text], input[type = password] {
+                width: 100%;
+                height: 20px;
+            }
+            input[type = submit], input[type = reset] {
+                width: 45%;
+                background-color: #7bbb1b;
+                border: none;
+                padding: 5px;
+                margin: 5px;
+                color: white;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            당신이 좋아하는 과일을 선택해 보세요.
+        </div>
+
+        <div class="box2">
+            <p>
+                <label for="txt_name">성명</label><br>
+                <input type="text" name="txt_name" id="txt_name" placeholder="성명 입력">
+            </p>
+            <p>
+                <label for="txt_pw">비밀번호</label><br>
+                <input type="password" name="txt_pw" id="txt_pw", placeholder="비밀번호 입력">
+            </p>
+            <p>
+                <label for="txt_fruit">좋아하는 과일을 선택하세요</label><br>
+                <span>
+                    <label>
+                        <input type="radio" name="item01" value="딸기">
+                        딸기
+                    </label>
+                </span>
+                <span>
+                    <label>
+                        <input type="radio" name="item02" value="바나나">
+                        바나나
+                    </label>
+                </span>
+                <span>
+                    <label>
+                        <input type="radio" name="item03" value="사과">
+                        사과
+                    </label>
+                </span>
+                <span>
+                    <label>
+                        <input type="radio" name="item04" value="수박">
+                        수박
+                    </label>
+                </span>
+            </p>
+            <p>
+                <input type="submit" value="결과보기">
+                <input type="reset" value="취소">
+            </p>
+        </div>
+    </body>
+</html>
