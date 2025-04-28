@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM 연습</title>
+        <style>
+            #s1, #s2 {
+                margin: 10px;
+                padding: 10px;
+                border : solid 2px tomato;
+                width: 600px;
+                height: 140px;
+            }
+            #s1 > h1 {
+                background-color: yellow;
+            }
+            #s2 > h1 {
+                background-color: green;
+            }
+            #s1 p {
+                background-color: tomato;
+            }
+            #s2 span {
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="s1">
+            <h1>구글</h1>
+            <p>
+                전 세계의 정보를 체계화 하여 모든 사용자가 편리하게... <span>미국의 다국적 기업</span>이다
+            </p>
+        </section>
+        <section id="s2">
+            <h1>네이버</h1>
+            <p>
+                <span>대한민국</span>의 포털 사이트이다.
+            </p>
+        </section>
+    </body>
+</html>
