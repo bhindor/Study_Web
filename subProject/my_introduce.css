@@ -1,0 +1,55 @@
+header {
+    background-color: #ffa569;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.txt_box {
+    text-align: center;
+}
+
+.info_box {
+    margin: 5px 40px 0 20px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.birth_container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_box input, select, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ffa569;
+}
+
+#btn_register {
+    background-color: #ffa569;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+}
+
+#txt_birth, #txt_day, #sel_mon {
+    width: 30%;
+    text-align: center;
+}
+
+#txt_day, #sel_mon {
+    margin-left: 20px;
+}
+
+#txt_introduce {
+    height: 140px;
+}
+
+p {
+    margin-top: 40px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>자기소개 페이지</title>
+        <link rel="stylesheet" href="my_introduce.css">
+        <script src="my_introduce.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>자기소개 페이지</h1>
+        </header>
+        <form name="myform">
+            <div class="txt_box">
+                <h2>정보 등록</h2>
+            </div>
+            <div class="info_box">
+                <p>
+                    <label for="txt_name">이름</label><br>
+                    <input type="text" name="txt_name" id="txt_name" placeholder="이름 입력">
+                </p>
+                <p>
+                    <label for="txt_age">나이</label><br>
+                    <input type="text" name="txt_age" id="txt_age" placeholder="나이 입력">
+                </p>
+                <p>
+                    <label for="txt_birth">생년월일</label><br>
+                    <div class="birth_container">
+                        <input type="text" name="txt_birth" id="txt_birth" placeholder="년">
+                        <select name="sel_mon" id="sel_mon">
+                            <option value="">월</option>
+                            <option value="1">1월</option>
+                            <option value="2">2월</option>
+                            <option value="3">3월</option>
+                            <option value="4">4월</option>
+                            <option value="5">5월</option>
+                            <option value="6">6월</option>
+                            <option value="7">7월</option>
+                            <option value="8">8월</option>
+                            <option value="9">9월</option>
+                            <option value="10">10월</option>
+                            <option value="11">11월</option>
+                            <option value="12">12월</option>
+                        </select>
+                        <input type="text" name="txt_day" id="txt_day" placeholder="일">
+                    </div>
+                </p>
+                <p>
+                    <label for="txt_introduce">자기소개</label>
+                    <input type="text" name="txt_introduce_title" id="txt_introduce_title" placeholder="본인 소개 한줄 제목을 적어주세요">
+                    <textarea name="txt_introduce" id="txt_introduce" placeholder="본인 소개글을 작성해주세요"></textarea>
+                </p>
+                <p>
+                    <input type="button" id="btn_register" value="등록하기" onclick="">
+                </p>
+            </div>
+        </form>
+    </body>
+</html>
