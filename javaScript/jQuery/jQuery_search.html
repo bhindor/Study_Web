@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jQuery_search.css">
+    <title>jquery 연습</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#img1").hide();
+            $("#sel1").change(function() {
+                console.log($("#sel1").val());
+                if($("sel1").val() == "") {
+                    alert("검색엔진을 선택하세요.");
+                    return;
+                }
+
+                var loc = "./img/" + $("#sel1").val() + ".png";
+                $("#img1").attr("src", loc);
+                $("#img1").show();
+
+                var url = "";
+                switch($("#sel1").val()) {
+                    case "google" :
+                        url = "https://www.google.com";
+                        break;
+                    case "naver": 
+                        url = "https://www.naver.com/";
+                        break;
+                    case "daum":
+                        url = "https://www.daum.net";
+                        break;
+                }
+                $("#a1").attr("href", url);
+                $("#p1").html("<a href='"+url+"'>" + url + "</a>")
+            });
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

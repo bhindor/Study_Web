@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jQuery_show.css">
+    <title>jQuery연습</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#bt1").click(function() {
+                $(".box2").show();
+            });
+            $("#bt2").click(function() {
+                $(".box2").hide();
+            });
+            $("#bt3").click(function() {
+                $(".box2").toggle();
+            });
+            $(".box2").click(function() {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="box1">jQuery</div>
+    <div class="box2" id="d1">Red</div>
+    <div class="box2" id="d2">Green</div>
+    <div class="box2" id="d3">Blue</div>
+    <form name="form1">
+        <input type="button" value="모두보기" id="bt1">
+        <input type="button" value="모두숨기기" id="bt2">
+        <input type="button" value="전환하기" id="bt3">
+    </form>
+</body>
+</html>
